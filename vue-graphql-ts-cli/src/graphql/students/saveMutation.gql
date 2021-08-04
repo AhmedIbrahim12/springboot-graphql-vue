@@ -1,0 +1,8 @@
+mutation saveStudent($student: StudentInput!){
+    saveStudent(student: $student){
+        id,
+        name,
+        semester,
+        gpa
+    }
+}

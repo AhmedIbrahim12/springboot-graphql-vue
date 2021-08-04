@@ -1,0 +1,8 @@
+query AllStudents{
+     allStudents{
+        id,
+        name,
+        semester,
+        gpa
+    }
+}

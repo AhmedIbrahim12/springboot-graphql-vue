@@ -1,0 +1,27 @@
+type Student{
+  id: Int!,
+  name: String!,
+  semester: Int!,
+  gpa: Float!
+}
+
+input StudentInput{
+  id: Int!,
+  name: String!,
+  semester: Int!,
+  gpa: Float!
+}
+
+type Query {
+  allStudents(name: String): [Student]
+}
+
+type Mutation{
+  saveStudent(student: StudentInput!): Student
+  updateStudent(student: StudentInput!): Student
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

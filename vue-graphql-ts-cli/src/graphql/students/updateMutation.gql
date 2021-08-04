@@ -1,0 +1,8 @@
+mutation updateStudent($student: StudentInput!){
+    updateStudent(student: $student){
+        id,
+        name,
+        semester,
+        gpa
+    }
+}
